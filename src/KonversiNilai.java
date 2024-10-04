@@ -1,4 +1,4 @@
-package Minggu3;
+
 import java.util.Scanner;
 
 public class KonversiNilai {
@@ -72,7 +72,7 @@ public class KonversiNilai {
         System.out.println(" === Kesimpulan === ");
 
         System.out.println("Nama mahasiswa : " + namaMahasiswa);
-        System.out.println("Nilai akhir mahasiswa : " + nilaiAkhir);
+        System.out.println("Nilai akhir mahasiswa : " + (int)nilaiAkhir);
         System.out.println("Grade mahasiswa : " + grade);
         System.out.println("Keterangan : " + keterangan);
         

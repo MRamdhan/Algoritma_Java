@@ -1,4 +1,3 @@
-package Latihan;
 import java.util.Scanner;
 
 public class Keliling_Segitiga {
