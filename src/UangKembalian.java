@@ -12,9 +12,12 @@ public class UangKembalian {
         System.out.print("Masukkan Uang Bayar : ");
         Double uangBayar = scanner.nextDouble();
 
-        double uangKembalian = uangBayar - totalBelanja ;
-        
-        System.out.println("Uang Kembalian : " + uangKembalian);
+        if (uangBayar >= totalBelanja) {
+            double uangKembalian = uangBayar - totalBelanja ;
+            System.out.println("Uang Kembalian : " + uangKembalian);
+        } else{
+            System.out.println("Uang Bayar Tidak Cukup!");
+        }
         scanner.close();    
     }
 }

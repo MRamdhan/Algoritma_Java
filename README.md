@@ -25,3 +25,4 @@
 ## Latihan 
 1. Menentukan Grade
 2. Keliling Segitiga
+3. Kasir Sederhana

@@ -7,12 +7,12 @@ public class KonversiNilai {
         System.out.println("=== Konversi Nilai Menjadi Grade === ");
         
 
-        double persenAbsen = 0.10; 
-        double persenTugas = 0.20; 
-        double persenProject = 0.25; 
-        double persenQuiz = 0.5;  
-        double persenUts = 0.20;   
-        double persenUas = 0.20;   
+        double persenAbsen = 10.0/100; 
+        double persenTugas = 20.0/100; 
+        double persenProject = 25.0/100;  
+        double persenQuiz = 5.0/100;  
+        double persenUts = 20.0/100;   
+        double persenUas = 20.0/100;   
         
         System.out.print("Masukkan Nama Mahasiswa : ");
         String namaMahasiswa = scanner.nextLine();
@@ -60,7 +60,7 @@ public class KonversiNilai {
         if (nilaiAkhir >= 85) {
             keterangan = "Lulus";
         } else if (nilaiAkhir >= 75) {
-            keterangan = "Lukus";
+            keterangan = "Lulus";
         } else if (nilaiAkhir >= 65) {
             keterangan = "Remedial";
         } else if (nilaiAkhir >= 55) {

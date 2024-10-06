@@ -21,33 +21,33 @@ public class diskon {
         if (totalBelanja >= 200000) {
             hasil = diskon3*totalBelanja;
             totalBelanja -= hasil;
-            System.out.println("Anda mendapatkan diskon 15%" + totalBelanja);
+            System.out.println("Anda mendapatkan diskon 15% : " + totalBelanja);
             if (member.equals("y")) {
                 hasil = 10.0/100*totalBelanja;
                 totalBelanja -= hasil;
-                System.out.println("Anda mendapatkan diskon 15% + diskon member " + totalBelanja);
+                System.out.println("Anda mendapatkan diskon 15% + diskon member : " + totalBelanja);
             } else if (member.equals("n")) {
                 System.out.println("Total belanja: " + totalBelanja);
             }
         } else if (totalBelanja >= 100000) {
             hasil = diskon2*totalBelanja;
             totalBelanja -= hasil;
-            System.out.println("Anda mendapatkan diskon 10%" + totalBelanja);
+            System.out.println("Anda mendapatkan diskon 10% : " + totalBelanja);
             if (member.equals("y")) {
                 hasil = 10.0/100*totalBelanja;
                 totalBelanja -= hasil;
-                System.out.println("Anda mendapatkan diskon 10% + diskon member " + totalBelanja);
+                System.out.println("Anda mendapatkan diskon 10% + diskon member : " + totalBelanja);
             } else if (member.equals("n")) {
                 System.out.println("Total belanja: " + totalBelanja);
             }
         } else if (totalBelanja >=50000) {
             hasil = diskon1*totalBelanja;
             totalBelanja -= hasil;
-            System.out.println("Anda mendapatkan diskon 5%" + totalBelanja);
+            System.out.println("Anda mendapatkan diskon 5% : " + totalBelanja);
             if (member.equals("y")) {
                 hasil = 10.0/100*totalBelanja;
                 totalBelanja -= hasil;
-                System.out.println("Anda mendapatkan diskon 5% + diskon member " + totalBelanja);
+                System.out.println("Anda mendapatkan diskon 5% + diskon member : " + totalBelanja);
             } else if (member.equals("n")) {
                 System.out.println("Total belanja: " + totalBelanja);
             }
@@ -57,13 +57,11 @@ public class diskon {
             if (member.equals("y")) {
                 hasil = 10.0/100*totalBelanja;
                 totalBelanja -= hasil;
-                System.out.println("Total belanja: " + totalBelanja);
+                System.out.println("Anda mendapatkan diskon member : " + totalBelanja);
             } else if (member.equals("n")) {
                 System.out.println("Total belanja: " + totalBelanja);
             }
         }
-
-        System.out.println("Total belanja: " + totalBelanja);
         scanner.close();
     }
 }
