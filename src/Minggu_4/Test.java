@@ -38,34 +38,6 @@ public class Test {
         }
 
         System.out.println();
-        System.out.println("=========");
-
-        a = 0;
-        for(int p = 0; p < 5; p++ ){
-                for(int j = 0; j < 5; j+=1){
-                    System.out.print(a +" ");
-                    a+= 1;
-                }
-                System.out.println();
-            }
-        System.out.println("=========");
-                a = 24; 
-        for(int p = 0; p < 5; p++ ){
-            for(int j = 0; j < 5; j+=1){
-                System.out.print(a +" ");
-                a-= 1;
-            }
-            System.out.println();
-        }
-        System.out.println("=========");    
-        System.out.println("=====QUIZ=====");   
         
-        for(int i = 2; i <= 5; i++) {
-            for(int j = 2; j <= 5; j++) {
-                if(i == j) {
-                System.out.println(i + "x" + j + " = " + (i*j));
-            }
-        }
-    }   
     }
 }

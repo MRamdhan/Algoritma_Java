@@ -22,6 +22,13 @@
 6. Libur
 7. Diskon
 
+## Minggu Keempat
+1. Looping Bintang
+2. Switch Case
+3. Quiz
+4. Looping Angka
+5. Hiitung Angka
+
 ## Latihan 
 1. Menentukan Grade
 2. Keliling Segitiga
