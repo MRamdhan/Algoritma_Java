@@ -25,7 +25,7 @@ public class PecahanUang {
         }
 
         if (jumlahUang >= 20000) {
-            duaPuluhRibu = jumlahUang / 20000;
+            duaPuluhRibu = jumlahUang / 20000; // 1Lembr
             jumlahUang = jumlahUang % 20000;
             System.out.println(duaPuluhRibu + " lembar/keping 20000 rupiah");
         }
@@ -37,19 +37,19 @@ public class PecahanUang {
         }
 
         if (jumlahUang >= 5000) {
-            limaRibu = jumlahUang / 5000;
+            limaRibu = jumlahUang / 5000; //1 lembar
             jumlahUang = jumlahUang % 5000;
             System.out.println(limaRibu + " lembar/keping 5000 rupiah");
         }
 
         if (jumlahUang >= 2000) {
-            duaRibu = jumlahUang / 2000;
+            duaRibu = jumlahUang / 2000; // 1 Lembar
             jumlahUang = jumlahUang % 2000;
             System.out.println(duaRibu + " lembar/keping 2000 rupiah");
         }
 
         if (jumlahUang >= 1000) {
-            seribu = jumlahUang / 1000;
+            seribu = jumlahUang / 1000; // 1 Lembar
             jumlahUang = jumlahUang % 1000;
             System.out.println(seribu + " lembar/keping 1000 rupiah");
         }
