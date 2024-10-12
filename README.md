@@ -23,11 +23,15 @@
 7. Diskon
 
 ## Minggu Keempat
-1. Looping Bintang
-2. Switch Case
+1. Looping Bintang(Tugas)
+2. Looping Angka(Latihan)
 3. Quiz
-4. Looping Angka
-5. Hiitung Angka
+4. Switch Case(Latihan)
+5. Hiitung Angka(Latihan)
+6. LoopAngkaV1(Tugas)
+7. LoopAngkaV2(Tugas)
+8. LoopAngkaV3(Tugas)
+9. LoopAngkaV4(Tugas)
 
 ## Latihan 
 1. Menentukan Grade

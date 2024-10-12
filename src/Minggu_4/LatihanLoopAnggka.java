@@ -1,6 +1,6 @@
 package Minggu_4;
 
-public class LoopAngka {
+public class LatihanLoopAnggka {
     public static void main(String[] args) {
         System.out.println("=========");
 
