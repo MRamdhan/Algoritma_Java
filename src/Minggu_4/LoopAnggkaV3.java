@@ -5,9 +5,9 @@ public class LoopAnggkaV3 {
         for(int x = 0; x < 4; x++){
             for(int y = 0; y < 5; y++){
                 if ((x + y) % 2 == 0) {
-                    System.out.print("-1 "); //Genap
+                    System.out.print("-1 "); 
                 } else {
-                    System.out.print(" 0 ");  //Ganjil
+                    System.out.print(" 0 "); 
                 }
             }
             System.out.println();
