@@ -1,5 +1,5 @@
 package Minggu_5;
-class Mahasiswa  {
+class Mahasiswa {
     String nim;
     String nama;
     double nilai;
@@ -25,7 +25,7 @@ public class ObjectArray {
             "Rapa",
             95.0);
         System.out.println("NIM\t\tNama\t\tNilai\t");
-        System.out.println("====================");
+        System.out.println("=======================================");
         for(Mahasiswa m : mhs){
             System.out.println(m.nim+"\t"+m.nama+"\t"+m.nilai);
         }
