@@ -33,6 +33,14 @@
 8. LoopAngkaV3(Tugas)
 9. LoopAngkaV4(Tugas)
 
+## Minggu Keempat
+1. Array Latihan (Latihan)
+2. Nilai Mahasiswa (Tugas 1)
+3. ObjectArray (Latihan)
+4. Soal Latihan (Latihan)
+5. Hiitung Angka(Latihan)
+6. TokoBuah (Tugas 2)
+
 ## Latihan 
 1. Menentukan Grade
 2. Keliling Segitiga
