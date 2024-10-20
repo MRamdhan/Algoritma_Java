@@ -33,7 +33,7 @@
 8. LoopAngkaV3(Tugas)
 9. LoopAngkaV4(Tugas)
 
-## Minggu Keempat
+## Minggu Kelima
 1. Array Latihan (Latihan)
 2. Nilai Mahasiswa (Tugas 1)
 3. ObjectArray (Latihan)
