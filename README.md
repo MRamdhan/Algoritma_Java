@@ -41,6 +41,12 @@
 5. Hiitung Angka(Latihan)
 6. TokoBuah (Tugas 2)
 
+## Minggu Keenam
+1. Array Loop
+2. Tipe Tipe Array
+3. Array List Mhasiswa(Tugas)
+4. Array List Toko Buah(Tugas)
+
 ## Latihan 
 1. Menentukan Grade
 2. Keliling Segitiga
