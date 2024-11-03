@@ -2,42 +2,42 @@ package Minggu_7;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Course {
-    String courseName;
+class Keterangan {
+    String namaProgram;
     int sks;
     double grade;
 
-    Course(String courseName, int sks, double grade) {
-        this.courseName = courseName;
+    Keterangan(String namaProgram, int sks, double grade) {
+        this.namaProgram = namaProgram;
         this.sks = sks;
         this.grade = grade;
     }
 }
 
-class CourseItem {
-    Course course;
+class JenisKeterangan {
+    Keterangan keterangan;
 
-    CourseItem(Course course) {
-        this.course = course;
+    JenisKeterangan(Keterangan keterangan) {
+        this.keterangan = keterangan;
     }
 
     double getGrade() {
-        return course.grade;
+        return keterangan.grade;
     }
 
     int getSKS() {
-        return course.sks;
+        return keterangan.sks;
     }
 
-    String getCourseName() {
-        return course.courseName;
+    String getnamaProgram() {
+        return keterangan.namaProgram;
     }
 }
 
-public class StudentCourses {
+public class LatihanUTS3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<CourseItem> courseList = new ArrayList<>();
+        ArrayList<JenisKeterangan> pilihan = new ArrayList<>();
 
         // Input for student's name and semester
         System.out.print("Masukkan nama mahasiswa: ");
@@ -51,7 +51,7 @@ public class StudentCourses {
         String addMore;
         do {
             System.out.print("Masukkan nama mata kuliah: ");
-            String courseName = scanner.nextLine();
+            String namaProgram = scanner.nextLine();
 
             System.out.print("Masukkan SKS: ");
             int sks = scanner.nextInt();
@@ -60,15 +60,13 @@ public class StudentCourses {
             double grade = scanner.nextDouble();
             scanner.nextLine(); // Consume newline
 
-            // Add the course to the list
-            Course course = new Course(courseName, sks, grade);
-            courseList.add(new CourseItem(course));
+            Keterangan keterangan = new Keterangan(namaProgram, sks, grade);
+            pilihan.add(new JenisKeterangan(keterangan));
 
             System.out.print("Tambahkan mata kuliah lain? (y/n): ");
             addMore = scanner.nextLine();
         } while (addMore.equalsIgnoreCase("y"));
 
-        // Display the student's information and courses
         System.out.println("=======================================================");
         System.out.println("\nNama Mahasiswa: " + studentName);
         System.out.println("Semester: " + semester);
@@ -76,8 +74,8 @@ public class StudentCourses {
         System.out.println("Daftar Mata Kuliah:");
         System.out.printf("%-20s %-5s %-5s\n", "Nama Mata Kuliah", "SKS", "Nilai");
         
-        for (CourseItem item : courseList) {
-            System.out.printf("%-20s %-5d %-5.2f\n", item.getCourseName(), item.getSKS(), item.getGrade());
+        for (JenisKeterangan item : pilihan) {
+            System.out.printf("%-20s %-5d %-5.2f\n", item.getnamaProgram(), item.getSKS(), item.getGrade());
         }
         System.out.println("=======================================================");
 

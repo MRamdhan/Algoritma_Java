@@ -47,6 +47,11 @@
 3. Array List Mhasiswa(Tugas)
 4. Array List Toko Buah(Tugas)
 
+## Minggu Ketujuh
+1. LatihanUTS1
+2. LatihanUTS2
+3. LatihanUTS3
+
 ## Latihan 
 1. Menentukan Grade
 2. Keliling Segitiga
