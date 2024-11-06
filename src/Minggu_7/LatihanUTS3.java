@@ -3,14 +3,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class Keterangan {
-    String namaProgram;
+    String matkul;
     int sks;
-    double grade;
+    double nilaigetNilai;
 
-    Keterangan(String namaProgram, int sks, double grade) {
-        this.namaProgram = namaProgram;
+    Keterangan(String matkul, int sks, double nilaigetNilai) {
+        this.matkul = matkul;
         this.sks = sks;
-        this.grade = grade;
+        this.nilaigetNilai = nilaigetNilai;
     }
 }
 
@@ -21,16 +21,16 @@ class JenisKeterangan {
         this.keterangan = keterangan;
     }
 
-    double getGrade() {
-        return keterangan.grade;
+    double getNilai() {
+        return keterangan.nilaigetNilai;
     }
 
     int getSKS() {
         return keterangan.sks;
     }
 
-    String getnamaProgram() {
-        return keterangan.namaProgram;
+    String getmatkul() {
+        return keterangan.matkul;
     }
 }
 
@@ -39,43 +39,41 @@ public class LatihanUTS3 {
         Scanner scanner = new Scanner(System.in);
         ArrayList<JenisKeterangan> pilihan = new ArrayList<>();
 
-        // Input for student's name and semester
         System.out.print("Masukkan nama mahasiswa: ");
-        String studentName = scanner.nextLine();
+        String nama = scanner.nextLine();
 
         System.out.print("Masukkan semester: ");
         int semester = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
-        // Loop to input courses
-        String addMore;
+        String tambah;
         do {
             System.out.print("Masukkan nama mata kuliah: ");
-            String namaProgram = scanner.nextLine();
+            String matkul = scanner.nextLine();
 
             System.out.print("Masukkan SKS: ");
             int sks = scanner.nextInt();
 
             System.out.print("Masukkan nilai: ");
-            double grade = scanner.nextDouble();
-            scanner.nextLine(); // Consume newline
+            double nilaigetnilai = scanner.nextDouble();
+            scanner.nextLine();
 
-            Keterangan keterangan = new Keterangan(namaProgram, sks, grade);
+            Keterangan keterangan = new Keterangan(matkul, sks, nilaigetnilai);
             pilihan.add(new JenisKeterangan(keterangan));
 
             System.out.print("Tambahkan mata kuliah lain? (y/n): ");
-            addMore = scanner.nextLine();
-        } while (addMore.equalsIgnoreCase("y"));
+            tambah = scanner.nextLine();
+        } while (tambah.equalsIgnoreCase("y"));
 
         System.out.println("=======================================================");
-        System.out.println("\nNama Mahasiswa: " + studentName);
+        System.out.println("\nNama Mahasiswa: " + nama);
         System.out.println("Semester: " + semester);
-        System.out.println("-------------------------------------------------------");
         System.out.println("Daftar Mata Kuliah:");
+        System.out.println("-------------------------------------------------------");
         System.out.printf("%-20s %-5s %-5s\n", "Nama Mata Kuliah", "SKS", "Nilai");
         
         for (JenisKeterangan item : pilihan) {
-            System.out.printf("%-20s %-5d %-5.2f\n", item.getnamaProgram(), item.getSKS(), item.getGrade());
+            System.out.printf("%-20s %-5d %-5.2f\n", item.getmatkul(), item.getSKS(), item.getNilai());
         }
         System.out.println("=======================================================");
 

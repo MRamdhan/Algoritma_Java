@@ -1,5 +1,4 @@
 package Minggu_7;
-import java.util.Scanner;
 
 public class LatihanUTS2 {
     public static void main(String[] args) {

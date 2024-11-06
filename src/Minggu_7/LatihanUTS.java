@@ -21,7 +21,7 @@ public class LatihanUTS {
             totalUpahLembur = jamLembur * upahLemburPerJam;
         }
 
-        double totalGaji = Math.round((gajiBulanan + totalUpahLembur) / 1000) * 1000;
+        double totalGaji = (gajiBulanan + totalUpahLembur) / 1000 * 1000;
 
         System.out.println("Upah lembur per jam: " + (int)upahLemburPerJam);
         System.out.println("Total gaji: " + (int)totalGaji);
