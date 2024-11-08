@@ -5,39 +5,31 @@ import java.util.Scanner;
 class Keterangan {
     String matkul;
     int sks;
-    double nilaigetNilai;
+    double nilai;
 
-    Keterangan(String matkul, int sks, double nilaigetNilai) {
+    Keterangan(String matkul, int sks, double nilai) {
         this.matkul = matkul;
         this.sks = sks;
-        this.nilaigetNilai = nilaigetNilai;
-    }
-}
-
-class JenisKeterangan {
-    Keterangan keterangan;
-
-    JenisKeterangan(Keterangan keterangan) {
-        this.keterangan = keterangan;
+        this.nilai = nilai;
     }
 
     double getNilai() {
-        return keterangan.nilaigetNilai;
+        return nilai;
     }
 
     int getSKS() {
-        return keterangan.sks;
+        return sks;
     }
 
     String getmatkul() {
-        return keterangan.matkul;
+        return matkul;
     }
 }
 
 public class LatihanUTS3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<JenisKeterangan> pilihan = new ArrayList<>();
+        ArrayList<Keterangan> keterangan = new ArrayList<>();
 
         System.out.print("Masukkan nama mahasiswa: ");
         String nama = scanner.nextLine();
@@ -55,25 +47,26 @@ public class LatihanUTS3 {
             int sks = scanner.nextInt();
 
             System.out.print("Masukkan nilai: ");
-            double nilaigetnilai = scanner.nextDouble();
+            double nilai = scanner.nextDouble();
             scanner.nextLine();
 
-            Keterangan keterangan = new Keterangan(matkul, sks, nilaigetnilai);
-            pilihan.add(new JenisKeterangan(keterangan));
+            keterangan.add(new Keterangan(matkul,sks,nilai));
 
             System.out.print("Tambahkan mata kuliah lain? (y/n): ");
             tambah = scanner.nextLine();
         } while (tambah.equalsIgnoreCase("y"));
 
         System.out.println("=======================================================");
-        System.out.println("\nNama Mahasiswa: " + nama);
+        System.out.println("Nama Mahasiswa: " + nama);
         System.out.println("Semester: " + semester);
-        System.out.println("Daftar Mata Kuliah:");
+        System.out.println("Daftar dan Data Mata Kuliah:");
         System.out.println("-------------------------------------------------------");
-        System.out.printf("%-20s %-5s %-5s\n", "Nama Mata Kuliah", "SKS", "Nilai");
+        System.out.printf("%-3s %-20s %-5s %-5s\n",
+                        "No","Nama Mata Kuliah", "SKS", "Nilai");
         
-        for (JenisKeterangan item : pilihan) {
-            System.out.printf("%-20s %-5d %-5.2f\n", item.getmatkul(), item.getSKS(), item.getNilai());
+        for(int i =0; i < keterangan.size(); i++){
+            Keterangan ket = keterangan.get(i);
+            System.out.printf("%-3d %-20s %-5d %-5.1f\n", (i + 1), ket.getmatkul(), ket.getSKS(), ket.getNilai());
         }
         System.out.println("=======================================================");
 
