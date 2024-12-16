@@ -9,8 +9,8 @@ public class JumpSearch {
         int n = array.length;
         int step = (int) Math.sqrt(n);
         int prev = 0;
-
-        while (array[Math.min(step, n) - 1] < x) {
+        
+        while(array[Math.min(step, n) - 1] < x){
             prev = step;
             step += (int) Math.sqrt(n);
             if (prev >= n) {
@@ -18,7 +18,7 @@ public class JumpSearch {
                 return;
             }
         }
-        for(int i = prev; i < Math.min(step,n); i++){
+        for(int i = prev; i < Math.min(step, n); i++){
             if (array[i] == x) {
                 System.out.println("Nilai ditemukan pada index ke-" + i);
                 return;
