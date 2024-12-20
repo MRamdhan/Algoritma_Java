@@ -52,6 +52,15 @@
 2. LatihanUTS2
 3. LatihanUTS3
 
+## Minggu Sepuluh
+1. Bubble Short
+
+## Minggu Sebelas
+1. Jump Search
+
+## Minggu Duabelas
+1. Rekursif
+
 ## Latihan 
 1. Menentukan Grade
 2. Keliling Segitiga
