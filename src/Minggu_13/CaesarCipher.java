@@ -2,8 +2,8 @@ package Minggu_13;
 
 public class CaesarCipher {
     public static void main(String[] args) {
-        String teksAsli = "HALO";
-        int geser = 3;
+        String teksAsli = "DANI";
+        int geser = 7;
         String terenkripsi = encrypt(teksAsli, geser);
         String terdekripsi = encrypt(terenkripsi, -geser);
 
